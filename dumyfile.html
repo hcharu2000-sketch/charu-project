@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nail Extension Discount</title>
+
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background: #ffe6f2;
+        margin: 0;
+        padding: 40px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #d63384;
+        font-size: 38px;
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 2px #fff;
+    }
+
+    .subtitle {
+        color: #555;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .card {
+        background: white;
+        width: 260px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        transition: 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+    }
+
+    .card h3 {
+        font-size: 22px;
+        color: #b30059;
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .discounted {
+        color: #ff0066;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .tag {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background: #ff0066;
+        color: white;
+        padding: 6px 18px;
+        font-size: 14px;
+        transform: rotate(20deg);
+        border-radius: 5px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="salon-status">
+  <h2>Live Salon Status</h2>
+
+  <div class="status-item">
+    <span class="label">Chairs Available:</span>
+    <span class="value" id="chairs-count">2</span>
+  </div>
+
+  <div class="status-item">
+    <span class="label">Approx. Wait Time:</span>
+    <span class="value" id="wait-time">14 mins</span>
+  </div>
+
+  <div class="status-item">
+    <span class="label">Next Free Slot:</span>
+    <span class="value" id="free-slot">3:45 PM</span>
+  </div>
+
+  <div class="status-refresh">Updating live…</div>
+</div>

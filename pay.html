@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nail Extension Discount</title>
+
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background: #ffe6f2;
+        margin: 0;
+        padding: 40px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #d63384;
+        font-size: 38px;
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 2px #fff;
+    }
+
+    .subtitle {
+        color: #555;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .card {
+        background: white;
+        width: 260px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        transition: 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+    }
+
+    .card h3 {
+        font-size: 22px;
+        color: #b30059;
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .discounted {
+        color: #ff0066;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .tag {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background: #ff0066;
+        color: white;
+        padding: 6px 18px;
+        font-size: 14px;
+        transform: rotate(20deg);
+        border-radius: 5px;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>💅 Nail Extension Discount</h1>
+<p class="subtitle">Enjoy a beautiful <strong>20% OFF</strong> on every nail service!</p>
+
+<div class="container" id="serviceContainer"></div>
+
+<script>
+    // List of nail services
+    const services = [
+        { name: "Acrylic Nail Extension", price: 50 },
+        { name: "Gel Nail Extension", price: 60 },
+        { name: "Nail Art Design", price: 25 },
+        { name: "French Nail Extension", price: 55 },
+        { name: "Ombre Nail Extension", price: 65 }
+    ];
+
+    const discountPercent = 20; // 20% discount
+    const container = document.getElementById("serviceContainer");
+
+    services.forEach(service => {
+        const discountAmount = service.price * (discountPercent / 100);
+        const finalPrice = service.price - discountAmount;
+
+        const card = document.createElement("div");
+        card.className = "card";
+
+        card.innerHTML = `
+            <div class="tag">${discountPercent}% OFF</div>
+            <h3>${service.name}</h3>
+            <p class="price">Original Price: $${service.price}</p>
+            <p class="discounted">Now: $${finalPrice.toFixed(2)}</p>
+        `;
+
+        container.appendChild(card);
+    });
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Extension Discount</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #ffe6f7, #ffd9f0);
+            margin: 0;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #d63384;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            width: 260px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+            position: relative;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+        }
+
+        .card h3 {
+            font-size: 22px;
+            color: #b30059;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #555;
+            text-decoration: line-through;
+            margin-bottom: 5px;
+        }
+
+        .discounted {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff007f;
+        }
+
+        .tag {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: #ff007f;
+            color: white;
+            padding: 6px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+            transform: rotate(15deg);
+        }
+    </style>
+</head>
+<body>
+
+<h1>💅 Nail Extension Discount</h1>
+<p class="subtitle">Get <strong>20% OFF</strong> on all nail services! 💖</p>
+
+<div class="container" id="serviceContainer"></div>
+
+<script>
+    const services = [
+        { name: "Acrylic Nail Extension", price: 1500 },
+        { name: "Gel Nail Extension", price: 1800 },
+        { name: "Nail Art Design", price: 500 },
+        { name: "French Nail Extension", price: 1600 },
+        { name: "Ombre Nail Extension", price: 2000 }
+    ];
+
+    const discountPercent = 20;
+    const container = document.getElementById("serviceContainer");
+
+    services.forEach(service => {
+        const discountAmount = service.price * (discountPercent / 100);
+        const finalPrice = service.price - discountAmount;
+
+        const card = document.createElement("div");
+        card.className = "card";
+
+        card.innerHTML = `
+            <div class="tag">₹{discountPercent}% OFF</div>
+            <h3>${service.name}</h3>
+            <p class="price">₹{service.price}</p>
+            <p class="discounted">Now: ₹{finalPrice.toFixed(0)}</p>
+        `;
+
+        container.appendChild(card);
+    });
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nail Salon Booking</title>
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #ffe6f7, #ffd9f0);
+        margin: 0;
+        padding: 40px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #d63384;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .booking-form {
+        max-width: 500px;
+        background: white;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .booking-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 500;
+        color: #555;
+    }
+
+    .booking-form input, .booking-form select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+
+    .booking-form button {
+        width: 100%;
+        padding: 12px;
+        background: #ff007f;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .booking-form button:hover {
+        background: #d63384;
+    }
+
+    .confirmation {
+        text-align: center;
+        font-size: 20px;
+        color: green;
+        margin-top: 20px;
+        display: none;
+    }
+
+    .price-display {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #ff007f;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<h1>💅 Nail Salon Booking</h1>
+<p class="subtitle">Book your service online and pay easily! 💖</p>
+
+<div class="booking-form">
+    <label for="service">Select Service</label>
+    <select id="service">
+        <option value="1500">Acrylic Nail Extension - ₹1500</option>
+        <option value="1800">Gel Nail Extension - ₹1800</option>
+        <option value="500">Nail Art Design - ₹500</option>
+        <option value="1600">French Nail Extension - ₹1600</option>
+        <option value="2000">Ombre Nail Extension - ₹2000</option>
+    </select>
+
+    <div class="price-display" id="priceDisplay">Price: ₹1500</div>
+
+    <label for="name">Your Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <label for="date">Booking Date</label>
+    <input type="date" id="date" required>
+
+    <label for="time">Booking Time</label>
+    <input type="time" id="time" required>
+
+    <button id="payButton">Pay & Book</button>
+    <div class="confirmation" id="confirmationMessage"></div>
+</div>
+
+<script>
+    const serviceSelect = document.getElementById("service");
+    const priceDisplay = document.getElementById("priceDisplay");
+    const payButton = document.getElementById("payButton");
+    const confirmationMessage = document.getElementById("confirmationMessage");
+
+    // Update price when service changes
+    serviceSelect.addEventListener("change", () => {
+        const price = serviceSelect.value;
+        priceDisplay.textContent = `Price: ₹${price}`;
+    });
+
+    // Simulate payment and booking
+    payButton.addEventListener("click", () => {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+        const serviceText = serviceSelect.options[serviceSelect.selectedIndex].text;
+
+        if(!name || !email || !date || !time){
+            alert("Please fill all the fields!");
+            return;
+        }
+
+        // Simulate payment delay
+        payButton.textContent = "Processing Payment...";
+        payButton.disabled = true;
+
+        setTimeout(() => {
+            payButton.textContent = "Pay & Book";
+            payButton.disabled = false;
+
+            confirmationMessage.style.display = "block";
+            confirmationMessage.innerHTML = `
+                ✅ Booking Confirmed!<br>
+                <strong>${serviceText}</strong><br>
+                Name: ${name}<br>
+                Date: ${date}, Time: ${time}<br>
+                Payment: ₹${serviceSelect.value}
+            `;
+        }, 1500);
+    });
+</script>
+
+</body>

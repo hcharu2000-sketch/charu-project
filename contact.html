@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salon Contact Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+   <div class="contact-wrapper">
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="contact-form">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Your Name">
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="you@example.com">
+
+            <label>Phone</label>
+            <input type="text" id="phone" placeholder="+123 456 7890">
+
+            <label>Message</label>
+            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+
+            <button type="submit" onclick="msg()">Send Message</button>
+            <p id="responseMsg"></p>
+        </form>
+
+        <!-- Info + Map -->
+        <div class="contact-info">
+            <h2>Visit Us</h2>
+            <p>✨ charu makeovers</p>
+            <p> jansua ,ambala city</p>
+            <p>📞7082265941>
+            <p>📧 artofbeauty
+
+            <h3>Working Hours</h3>
+            <p>Mon – Sat: 9:00 AM – 8:00 PM</p>
+            
+
+            <h3>Find Us on Map</h3>
+
+            <!-- ⭐ GOOGLE MAP EMBED -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609894906!2d72.7410997435976!3d19.082197839966616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63a7195f71d%3A0xef6f3c8bdbd32b1c!2sMumbai!5e0!3m2!1sen!2sin!4v1700000000000"
+                width="100%" height="200" style="border:0;" allowfullscreen loading="lazy">
+            </iframe>
+
+            <!-- ⭐ SOCIAL MEDIA ICONS -->
+            <div class="socials">
+                <a href="#" target="_blank">Instagram</a> |
+                <a href="#" target="_blank">Facebook</a> |
+                <a href="#" target="_blank">YouTube</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+function msg(){
+    alert("We'll contact you soon!!")
+}
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
+
